@@ -48,7 +48,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter); // 在app中注册routes该接口
-app.use('/auth', authRouter); // 在app中注册routes该接口
+app.use('/auth', authRouter); // 在app中注册auth该接口
 app.use('/user', usersRouter); // 在app中注册users接口
 
 // catch 404 and forward to error handler
